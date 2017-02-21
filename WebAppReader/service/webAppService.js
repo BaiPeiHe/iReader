@@ -1,12 +1,30 @@
 
 var fs = require('fs');
+
+// Mock 测试
 exports.get_test_data = function () {
     var content = fs.readFileSync('./mock/test.json','utf-8');
-
     return content;
 }
 
-// 搜索接口
+// Mock 首页接口
+exports.get_home_data = function () {
+    var content = fs.readFileSync('./mock/home.json','utf-8');
+    return content;
+}
+
+// Mock 书籍
+exports.get_book_data = function (book_id) {
+    if(!book_id){
+        book_id = "18218";
+    }
+    var content = fs.readFileSync('./mock/book/' + book_id + '.json','utf-8');
+    return content;
+
+}
+
+
+// Http 搜索接口
 exports.get_search_data = function (start,end,keyword) {
     return function (cb) {
         var http = require('http');

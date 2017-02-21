@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--设置页面不能缩放-->
+        <meta name="viewport" content="device-width,initial-scale=1,user-scalable=no">
+        <!--设置，页面中的数字不要被识别为电话号码-->
+        <meta name="format-detection" content="telephone=no">
+        <!--引入 CSS-->
+        <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/all.css">
+
+        <title>书城首页</title>
+    </head>
+    <body>
+        <div id="root">
+            <% include include/header.html %>
+            <div>
+                <% include include/index-top.html %>
+                <% include include/index-hot.html %>
+                <% include include/index-recommend.html %>
+                <% include include/index-female.html %>
+                <% include include/index-male.html %>
+                <% include include/index-free.html %>
+                <% include include/index-bottom.html %>
+            </div>
+        </div>
+    </body>
+
+    <script src="/static/script/vue.js"></script>
+    <script src="/static/script/zepto.js"></script>
+    <script src="/static/script/pages/index.js"></script>
+
+</html>

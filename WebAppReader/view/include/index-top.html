@@ -1,0 +1,87 @@
+<style type="text/css">
+
+    .top-home {
+        background: #fff;
+        border-bottom: 10px solid #f5f5f5;
+    }
+
+    .top-home-search {
+        margin: 10px 13px;
+        padding: 1px 0px 0px 30px;
+        /*依次是字号，行高，*/
+        font: 11px/33px a;
+        color: agba(0,0,0,0.4);
+        background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01dSYLeWtSR/tY73MgTfVw7UAS.png) no-repeat 8px center;
+        background-size: 14px;
+        border: 1px solid #f5f5f5;
+        border-radius: 2px;
+    }
+
+    .cover {
+        width: 100%;
+    }
+
+    .top-home-btn {
+        margin: 14px 0 4px;
+        display: -webkit-box;
+        width: 100%;
+    }
+    /*使用-webkit-box-flex权重来等分布局*/
+    .top-home-btn li {
+        line-height: 2.4;
+        font-size: 12px;
+        text-align: center;
+        -webkit-box-flex: 1;
+    }
+
+    .top-home-icon {
+        display: block;
+        margin: 0 auto;
+        height: 22px;
+        width: 22px;
+    }
+
+</style>
+
+
+<section class="top-home">
+    <!--搜索-->
+    <a href="/search">
+        <div class="top-home-search">输入书名/作者/关键词</div>
+    </a>
+    <!--banner-->
+    <div class="slider-banner">
+        <div>
+            <a href="http://dushu.xiaomi.com/#page=channel&id=410">
+                <img class="cover" src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01tBqnupVze/qayTXiXrMm1lVm.jpg"/>
+            </a>
+        </div>
+    </div>
+    <!--门类导航-->
+    <ul class="top-home-btn">
+       <li>
+           <a href="/male">
+               <img class="top-home-icon" src="/static/img/male.png"/>
+               <p class="top-home-des">男生</p>
+           </a>
+       </li>
+        <li>
+           <a href="/female">
+               <img class="top-home-icon" src="/static/img/female.png"/>
+               <p class="top-home-des">女生</p>
+           </a>
+       </li>
+        <li>
+           <a href="/category">
+               <img class="top-home-icon" src="/static/img/category.png"/>
+               <p class="top-home-des">分类</p>
+           </a>
+       </li>
+        <li>
+           <a href="/rank">
+               <img class="top-home-icon" src="/static/img/rank.png"/>
+               <p class="top-home-des">排行</p>
+           </a>
+       </li>
+    </ul>
+</section>
